@@ -58,7 +58,7 @@ body {
     width: 100%; /* Ensure full-width on larger screens */
   }
   
-  @media (max-width: 768px) {
+  @media only screen and (max-width: 768px) {
     #hero {
       grid-template-columns: 1fr; /* Single column for smaller screens */
       grid-template-rows: auto auto; /* Stack elements vertically */
@@ -68,7 +68,19 @@ body {
     #heroLeft, #heroRight {
       margin: 0; /* Remove default margins on smaller screens */
     }
-  }
+
+    #projectsList{
+       
+        display: flex;
+        flex-direction: column;
+        column-gap: 3rem;
+        margin-top: 1rem;
+        padding: 30px;
+    }
+    }
+
+
+  
   
 
 #heroLeft {
@@ -270,7 +282,6 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 20px;
-    width: 50%;
   }
   
   #whyUsStats div {
@@ -389,8 +400,12 @@ body {
     width: 16rem;
 }
 
-.projectsItems img {
-    width: 10rem;
+.projectsItem img {
+    
+
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
 }
 
 .projectInfo {
@@ -401,6 +416,8 @@ body {
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    height: 420px;
+    align-items: stretch;
 }
 
 .projectTitle {
