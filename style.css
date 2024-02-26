@@ -15,7 +15,9 @@ body {
 * { 
     font-family: 'Poppins', sans-serif;
 }
-
+#navLogo{
+    height: 100px;
+}
 #navbar {
     width: 100%;
     box-sizing: border-box;
