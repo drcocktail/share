@@ -621,6 +621,8 @@ body {
 }
 
 
+
+
 .FAQquestion {
     display: flex;
     flex-direction: row;
@@ -658,6 +660,7 @@ body {
     color: var(--light-gray);
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    overflow-y: scroll;
 }
 
 .FAQItem.active {
