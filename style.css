@@ -79,7 +79,9 @@ body {
     }
     }
 
-
+#navLogo img{
+    max-height: 100px;
+}
   
   
 
